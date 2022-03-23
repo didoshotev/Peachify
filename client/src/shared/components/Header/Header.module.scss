@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(73, 38, 64);
+    height: 80px;
+
+    &-logo {
+        width: 15%;
+        // border-right: 4px solid #fff;
+    }
+
+    &-nav {
+        width: 40%;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+
+            &-item {
+                cursor: pointer;
+                color: rgba(236, 236, 236, 1);
+                font-size: 17px;
+
+                &-active {
+                    color: rgba(219, 168, 0, 1);
+                }
+            }
+        }
+    }
+
+    &-info {
+        &-list {
+            width: 20%;
+            display: flex;
+        }
+    }
+
+    &-info {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                &-account {
+                    flex-grow: 1;
+                    border: 2px solid rgba(172, 105, 17, 0.71);
+                    padding: 5px 15px;
+                    border-radius: 40px;
+                    text-align: center;
+                    color: #ececec;
+                    margin-right: 35px;
+                }
+                &-dsc {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    width: 50px;
+    height: 3px;
+    background-color: rgba(219, 168, 0, 1);
+    border: none;
+}

@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@emotion/react": "^11.8.2",
+        "@emotion/styled": "^11.8.1",
+        "@mui/material": "^5.5.2",
         "@testing-library/jest-dom": "^5.16.2",
         "@testing-library/react": "^12.1.4",
         "@testing-library/user-event": "^13.5.0",
@@ -21,7 +24,8 @@
         "lint": "eslint . --ext .jsx,.js",
         "lint:fix": "eslint --fix . --ext .jsx,.js",
         "prepare": "cd .. && husky install client/.husky",
-        "prettier": "npx prettier --write ."
+        "prettier": "npx prettier --write .",
+        "format": "npx prettier --write . && eslint --fix . --ext .jsx,.js"
     },
     "eslintConfig": {
         "extends": [
@@ -48,7 +52,8 @@
         "eslint-plugin-jsx-a11y": "^6.5.1",
         "eslint-plugin-react": "^7.29.4",
         "eslint-plugin-react-hooks": "^4.3.0",
+        "husky": "^7.0.0",
         "prettier": "2.6.0",
-        "husky": "^7.0.0"
+        "sass": "^1.49.9"
     }
 }
