@@ -1,0 +1,39 @@
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-bottom: 40px;
+
+        height: 340px;
+        width: 220px;
+        color: #ececec;
+        // background-color: transparent;
+        background-color: rgb(77, 43, 84);
+        overflow: hidden;
+        border-radius: 47px;
+
+        &-head {
+            // @extend .page-bg !optional;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            // border: 1px solid rgb(77, 43, 84);
+            border: 2px solid #dba800;
+            border-radius: 47px;
+            overflow: hidden;
+        }
+
+        &-body {
+            font-size: 17px;
+            font-family: MoonLight;
+            text-align: center;
+            background-color: rgb(77, 43, 84);
+        }
+    }
+}

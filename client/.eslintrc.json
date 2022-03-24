@@ -15,6 +15,7 @@
     "rules": {
         "react/react-in-jsx-scope": "off",
         "indent": "off",
-        "react/jsx-indent": ["error", 4]
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": ["error", 4]
     }
 }

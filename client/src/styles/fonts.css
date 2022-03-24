@@ -1,0 +1,44 @@
+@font-face {
+    font-family: MoonLight;
+    src: url('./fonts/Moon\ Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: MoonBold;
+    src: url('./fonts/Moon\ Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Nasalization;
+    src: url('./fonts/nasalization-rg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuRegularPro;
+    src: url('./fonts/apercu_regular_pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuRegularItalicPro;
+    src: url('./fonts/apercu_regular_italic_pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuMediumPro;
+    src: url('./fonts/apercu_medium_pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuMediumItalicPro;
+    src: url('./fonts/apercu_medium_italic_pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuBoldPro;
+    src: url('./fonts/apercu_bold_pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ApercuBoldItalicPro;
+    src: url('./fonts/apercu_bold_italic_pro.otf') format('opentype');
+}
