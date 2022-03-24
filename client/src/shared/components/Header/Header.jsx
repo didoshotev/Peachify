@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
+import { Link } from 'react-router-dom';
 import classes from './Header.module.scss';
 
 function Header() {
@@ -11,32 +12,46 @@ function Header() {
             <Container maxWidth="xl">
                 <Toolbar className={classes.header}>
                     <span className={classes['header-logo']}>
-                        <Typography variant="h6" component="div">
-                            Peachify
-                        </Typography>
+                        <Link to="/">
+                            <Typography variant="h6" component="div" sx={{ color: 'white' }}>
+                                Peachify
+                            </Typography>
+                        </Link>
                     </span>
                     <nav className={classes['header-nav']}>
                         <ul className={classes['header-nav-list']}>
-                            <li
-                                className={`${classes['header-nav-list-item']} ${classes['header-nav-list-item-active']}`}
-                            >
-                                dashboard
-                            </li>
-                            <li className={classes['header-nav-list-item']}>
-                                tables
-                            </li>
-                            <li className={classes['header-nav-list-item']}>
-                                overview
-                            </li>
-                            <li className={classes['header-nav-list-item']}>
-                                casino
-                            </li>
-                            <li className={classes['header-nav-list-item']}>
-                                token swap
-                            </li>
-                            <li className={classes['header-nav-list-item']}>
-                                my NFT
-                            </li>
+                            <Link to="/dashboard">
+                                <li
+                                    className={`${classes['header-nav-list-item']} ${classes['header-nav-list-item-active']}`}
+                                >
+                                    dashboard
+                                </li>
+                            </Link>
+                            <Link to="/tables">
+                                <li className={classes['header-nav-list-item']}>
+                                    tables
+                                </li>
+                            </Link>
+                            <Link to="/overview">
+                                <li className={classes['header-nav-list-item']}>
+                                    overview
+                                </li>
+                            </Link>
+                            <Link to="/casino">
+                                <li className={classes['header-nav-list-item']}>
+                                    casino
+                                </li>
+                            </Link>
+                            <Link to="/swap">
+                                <li className={classes['header-nav-list-item']}>
+                                    token swap
+                                </li>
+                            </Link>
+                            <Link to="/myNft">
+                                <li className={classes['header-nav-list-item']}>
+                                    my NFT
+                                </li>
+                            </Link>
                         </ul>
                     </nav>
                     <ul className={classes['header-info-list']}>

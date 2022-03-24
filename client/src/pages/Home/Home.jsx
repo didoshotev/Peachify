@@ -1,11 +1,11 @@
 import HeaderFooterLayout from '../../shared/components/layouts/HeaderFooterLayout/HeaderFooterLayout';
 
-function Dashboard() {
+function Home() {
     return (
         <HeaderFooterLayout>
-            <h2>Dashboard Page</h2>
+            <h2>Home Page</h2>
         </HeaderFooterLayout>
     );
 }
 
-export default Dashboard;
+export default Home;
