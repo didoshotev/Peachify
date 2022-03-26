@@ -1,0 +1,51 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    padding: 0 20px 3px 20px;
+    font-family: ApercuRegularPro;
+
+    &-leftLabel {
+        color: #ececec;
+        flex-grow: 1;
+    }
+
+    &-rightLabel {
+        color: #89798e;
+        margin-right: 100px;
+    }
+
+    &-value {
+        color: #ffffff;
+        font-size: 17px;
+    }
+}
+
+.input-container {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+    text-indent: 10px;
+    font-size: 17px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.currency {
+    position: absolute;
+    top: 9px;
+    bottom: 9px;
+    right: 30px;
+    left: 690px;
+    font-size: 22px;
+    color: #d4d4d4;
+    border-left: 1px solid #e9e9e9;
+    padding-left: 45px;
+}

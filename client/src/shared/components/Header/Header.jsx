@@ -13,7 +13,11 @@ function Header() {
                 <Toolbar className={classes.header}>
                     <span className={classes['header-logo']}>
                         <Link to="/">
-                            <Typography variant="h6" component="div" sx={{ color: 'white' }}>
+                            <Typography
+                                variant="h6"
+                                component="div"
+                                sx={{ color: 'white' }}
+                            >
                                 Peachify
                             </Typography>
                         </Link>

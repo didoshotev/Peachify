@@ -24,9 +24,7 @@
         "eject": "react-scripts eject",
         "lint": "eslint . --ext .jsx,.js",
         "lint:fix": "eslint --fix . --ext .jsx,.js",
-        "prepare": "cd .. && husky install client/.husky",
-        "prettier": "npx prettier --write .",
-        "format": "npx prettier --write . && eslint --fix . --ext .jsx,.js"
+        "prepare": "cd .. && husky install client/.husky"
     },
     "eslintConfig": {
         "extends": [

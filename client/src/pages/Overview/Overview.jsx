@@ -7,7 +7,7 @@ import classes from './Overview.module.scss';
 function Overview() {
     return (
         <HeaderFooterLayout>
-            <div className={classes['page-bg']}>
+            <div className="page-bg">
                 <Container maxWidth="xl">
                     <section className={classes['page-content']}>
                         <OverviewList />
