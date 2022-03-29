@@ -75,7 +75,7 @@ function Header() {
                         <li className={classes['header-info-list-item']}>
                             <img
                                 src="/icons/twitter-white.svg"
-                                alt="discord icon"
+                                alt="twitter icon"
                             />
                         </li>
                     </ul>
