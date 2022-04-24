@@ -16,6 +16,12 @@
         "react/react-in-jsx-scope": "off",
         "indent": "off",
         "react/jsx-indent": "off",
-        "react/jsx-indent-props": ["error", 4]
+        "react/jsx-indent-props": ["error", 4],
+        "lines-between-class-members" : [ 
+            "error",
+            "always",
+            { "exceptAfterSingleLine": true }
+        ],
+        "import/prefer-default-export": "off"
     }
 }

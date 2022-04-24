@@ -1,3 +1,4 @@
+/* eslint-disable */
 import CssBaseline from '@mui/material/CssBaseline';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
@@ -7,6 +8,9 @@ import Tables from './pages/Tables/Tables';
 import Casino from './pages/Casino/Casino';
 import Swap from './pages/Swap/Swap';
 import MyNFT from './pages/MyNFT/MyNFT';
+import { useWeb3 } from './context/Web3Context/Web3ContextProvider';
+import { useEffect } from 'react';
+
 
 function App() {
     return (

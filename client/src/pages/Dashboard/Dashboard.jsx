@@ -1,8 +1,24 @@
+/* eslint-disable */
 import { Container } from '@mui/material';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router';
+import { useWeb3 } from '../../context/Web3Context/Web3ContextProvider';
 import HeaderFooterLayout from '../../shared/components/layouts/HeaderFooterLayout/HeaderFooterLayout';
 import classes from './Dashboard.module.scss';
 
 function Dashboard() {
+    const { account } = useWeb3();
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+        console.log('current account: ', account);
+        if (!account) {
+            console.log('redirect');
+            navigate("/");
+        }
+    }, [account])
+    
+
     return (
         <HeaderFooterLayout>
             <div className="page-bg">
