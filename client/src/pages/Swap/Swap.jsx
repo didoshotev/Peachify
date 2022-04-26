@@ -1,9 +1,22 @@
+/* eslint-disable */
 import { Button } from '@mui/material';
+import { ethers } from 'ethers';
+import { useEffect } from 'react';
+import { useWeb3 } from '../../context/Web3Context/Web3ContextProvider';
 import HeaderFooterLayout from '../../shared/components/layouts/HeaderFooterLayout/HeaderFooterLayout';
+import { getBalance } from '../../utils/format';
 import classes from './Swap.module.scss';
 import SwapInput from './SwapInput/SwapInput';
 
 function Swap() {
+    const { getAccountBalance, provider } = useWeb3();
+        
+
+    useEffect(async() => { 
+        // const balance = await getAccountBalance();
+        // const provider = ethers.getDefaultProvider();
+    })
+
     return (
         <HeaderFooterLayout>
             <div className="page-bg">

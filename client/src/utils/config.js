@@ -1,10 +1,13 @@
-// import ERC20 from './ERC20/ERC20';
+/* eslint-disable */
+require('dotenv').config();
 
-// const defaultEthereumConfig = {
-//     testing: false,
-//     autoGasMultiplier: 1.5,
-//     defaultConfirmations: 1,
-//     defaultGas: '6000000',
-//     defaultGasPrice: '1000000000000',
-//     ethereumNodeTimeout: 10000,
-// };
+const configuration = {
+    development: {
+        rinkeby: {
+            networkName: 'Rinkeby',
+            deployment: require('./deployments/deployments.rinkeby.json'),
+        },
+    },
+};
+
+export default configuration[process.env.REACT_APP_STAGE || 'development'];

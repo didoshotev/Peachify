@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -5,8 +6,12 @@ import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 import classes from './Header.module.scss';
+import { useWeb3 } from '../../../context/Web3Context/Web3ContextProvider';
+import { shortenAddress } from '../../../utils/format';
 
 function Header() {
+    const { account } = useWeb3();
+
     return (
         <AppBar position="static" sx={{ backgroundColor: 'rgb(73, 38, 64)' }}>
             <Container maxWidth="xl">
@@ -62,7 +67,7 @@ function Header() {
                         <li
                             className={`${classes['header-info-list-item']} ${classes['header-info-list-item-account']}`}
                         >
-                            123X3456X...456b
+                            {account ? shortenAddress(account) : "unknown address"}
                         </li>
                         <li
                             className={`${classes['header-info-list-item']} ${classes['header-info-list-item-dsc']}`}

@@ -1,24 +1,18 @@
 /* eslint-disable */
 import { Container } from '@mui/material';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router';
-import { useWeb3 } from '../../context/Web3Context/Web3ContextProvider';
+import { usePeachify } from '../../context/PeachifyProvider/PeachifyContextProvider';
 import HeaderFooterLayout from '../../shared/components/layouts/HeaderFooterLayout/HeaderFooterLayout';
 import classes from './Dashboard.module.scss';
 
 function Dashboard() {
-    const { account } = useWeb3();
-    const navigate = useNavigate();
+    const { peachify } = usePeachify();
     
-    useEffect(() => {
-        console.log('current account: ', account);
-        if (!account) {
-            console.log('redirect');
-            navigate("/");
-        }
-    }, [account])
-    
-
+    useEffect(() => { 
+        console.log('Peachify: ', peachify);
+        const router = peachify.getJoeRouter02();
+        console.log('Router: ', router);
+    })
     return (
         <HeaderFooterLayout>
             <div className="page-bg">
